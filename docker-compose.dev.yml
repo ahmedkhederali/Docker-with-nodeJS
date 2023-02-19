@@ -1,0 +1,14 @@
+version: '3'
+services: 
+  node-app:
+    build:
+      context: .   # where you build ? . mean from dckerfile
+      args:
+        - NODE_ENV=devlopment
+    volumes:
+      - ./src:/app/src
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=Production
+    command: npm run start-dev

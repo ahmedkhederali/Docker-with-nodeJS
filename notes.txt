@@ -1,0 +1,15 @@
+1 - بكتب في الدوكر فايل شويه تعليمات ازاي انفذ التعليمات بتاعتي وازاي هيبني ال اااب بتاعي 
+2- الناتج في النهايه هو الكونتانر 
+3- image like a templates used to run container
+4- does i must Copy All Files in Docker File?
+
+
+5-old shape of docker
+
+FROM node
+WORKDIR /app
+COPY package.json .
+RUN npm install
+COPY . .
+EXPOSE 4000
+CMD [ "npm","run","start-dev" ]
